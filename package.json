@@ -1,0 +1,28 @@
+{
+	"name": "@tommy-mitchell/dprint-config",
+	"version": "0.0.0",
+	"description": "Personal config for dprint.",
+	"keywords": [
+		"nodejs",
+		"config",
+		"dprint"
+	],
+	"license": "MIT",
+	"repository": "tommy-mitchell/dprint-config",
+	"author": {
+		"name": "Tommy Mitchell",
+		"url": "https://tommymitchell.io"
+	},
+	"files": [
+		"index.json"
+	],
+	"scripts": {
+		"format": "dprint fmt"
+	},
+	"peerDependencies": {
+		"dprint": "^0.45.0"
+	},
+	"devDependencies": {
+		"dprint": "^0.45.0"
+	}
+}

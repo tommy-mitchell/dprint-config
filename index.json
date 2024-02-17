@@ -1,0 +1,30 @@
+{
+	"$schema": "https://dprint.dev/schemas/v0.json",
+	"excludes": [
+		"**/node_modules",
+		"**/*-lock.json",
+		"yarn.lock"
+	],
+	"lineWidth": 120,
+	"useTabs": true,
+	"json": {
+		"jsonTrailingCommaFiles": [
+			"tsconfig.json",
+			".vscode/settings.json"
+		]
+	},
+	"typescript": {
+		"semiColons": "always",
+		"quoteProps": "consistent",
+		"useBraces": "always",
+		"bracePosition": "sameLine",
+		"singleBodyPosition": "nextLine",
+		"nextControlFlowPosition": "maintain",
+		"trailingCommas": "onlyMultiLine",
+		"arrowFunction.useParentheses": "maintain",
+		"typeAssertion.spaceBeforeExpression": false,
+		"jsx.multiLineParens": "prefer",
+		"unionAndIntersectionType.preferSingleLine": true,
+		"module.sortImportDeclarations": "maintain"
+	}
+}

@@ -20,9 +20,9 @@
 		"format": "dprint fmt"
 	},
 	"peerDependencies": {
-		"dprint": "^0.45.0"
+		"dprint": "0.x"
 	},
 	"devDependencies": {
-		"dprint": "^0.45.0"
+		"dprint": "0.x"
 	}
 }

@@ -11,6 +11,8 @@ npm install --save-dev @tommy-mitchell/dprint-config dprint
 <details>
 <summary>Other Package Managers</summary>
 
+<br />
+
 ```sh
 yarn add --dev @tommy-mitchell/dprint-config dprint
 ```
@@ -43,8 +45,8 @@ Add the following to your `settings.json`:
 
 ```jsonc
 "[javascript][typescript][markdown][json][jsonc]": {
-	"editor.formatOnSave": true,
-	"editor.defaultFormatter": "dprint.dprint",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "dprint.dprint",
 },
 ```
 

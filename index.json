@@ -10,7 +10,12 @@
 	"json": {
 		"jsonTrailingCommaFiles": [
 			"tsconfig.json",
-			".vscode/settings.json"
+			"tsconfig.build.json",
+			"jsconfig.json",
+			".vscode/settings.json",
+			".vscode/extensions.json",
+			".vscode/tasks.json",
+			".vscode/launch.json"
 		]
 	},
 	"typescript": {

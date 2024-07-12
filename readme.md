@@ -10,13 +10,13 @@ npm install --save-dev @tommy-mitchell/dprint-config dprint
 
 <details>
 <summary>Other Package Managers</summary>
-
-<br />
+<p>
 
 ```sh
 yarn add --dev @tommy-mitchell/dprint-config dprint
 ```
 
+</p>
 </details>
 
 After installing, add your desired `dprint` plugins:

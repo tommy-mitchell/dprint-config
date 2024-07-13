@@ -18,7 +18,7 @@
 			".vscode/launch.json"
 		]
 	},
-	"melva": {
+	"malva": {
 		"hexCase": "upper",
 		"trailingComma": true,
 		"padComments": true,

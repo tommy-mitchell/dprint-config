@@ -18,6 +18,13 @@
 			".vscode/launch.json"
 		]
 	},
+	"melva": {
+		"hexCase": "upper",
+		"trailingComma": true,
+		"padComments": true,
+		"declarationOrder": "smacss",
+		"ignoreCommentDirective": "dprint-ignore"
+	},
 	"typescript": {
 		"semiColons": "always",
 		"quoteProps": "consistent",
@@ -31,5 +38,9 @@
 		"jsx.multiLineParens": "prefer",
 		"unionAndIntersectionType.preferSingleLine": true,
 		"module.sortImportDeclarations": "maintain"
+	},
+	"yaml": {
+		"formatComments": true,
+		"ignoreCommentDirective": "dprint-ignore"
 	}
 }

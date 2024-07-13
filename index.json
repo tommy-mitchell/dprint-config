@@ -40,6 +40,7 @@
 		"module.sortImportDeclarations": "maintain"
 	},
 	"yaml": {
+		"useTabs": false,
 		"formatComments": true,
 		"ignoreCommentDirective": "dprint-ignore"
 	}

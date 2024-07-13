@@ -3,6 +3,7 @@
 		"index.json",
 		"dprint.json",
 		"package.json",
+		".github/workflows/*.yml",
 		"test/test.js"
 	],
 	"extends": ["./index.json"],

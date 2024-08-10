@@ -37,7 +37,8 @@
 		"typeAssertion.spaceBeforeExpression": false,
 		"jsx.multiLineParens": "prefer",
 		"unionAndIntersectionType.preferSingleLine": true,
-		"module.sortImportDeclarations": "maintain"
+		"module.sortImportDeclarations": "maintain",
+		"module.sortExportDeclarations": "maintain"
 	},
 	"yaml": {
 		"useTabs": false,

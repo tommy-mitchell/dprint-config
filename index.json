@@ -41,7 +41,6 @@
 		"module.sortExportDeclarations": "maintain"
 	},
 	"yaml": {
-		"useTabs": false,
 		"formatComments": true,
 		"ignoreCommentDirective": "dprint-ignore"
 	}

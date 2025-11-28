@@ -21,8 +21,16 @@
 	"malva": {
 		"hexCase": "upper",
 		"trailingComma": true,
-		"padComments": true,
+		"formatComments": true,
 		"declarationOrder": "smacss",
+		"ignoreCommentDirective": "dprint-ignore"
+	},
+	"markup": {
+		"formatComments": true,
+		"scriptIndent": true,
+		"styleIndent": true,
+		"preferAttrsSingleLine": true,
+		"html.void.selfClosing": true,
 		"ignoreCommentDirective": "dprint-ignore"
 	},
 	"typescript": {

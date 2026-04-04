@@ -2,8 +2,11 @@
 	"$schema": "https://dprint.dev/schemas/v0.json",
 	"excludes": [
 		"**/node_modules",
-		"**/*-lock.json",
-		"yarn.lock"
+		"**/package-lock.json",
+		"**/yarn.lock",
+		"**/pnpm-lock.yaml",
+		"**/bun.lock",
+		"**/deno.lock"
 	],
 	"lineWidth": 120,
 	"useTabs": true,

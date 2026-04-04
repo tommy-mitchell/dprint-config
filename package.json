@@ -25,8 +25,8 @@
 		"dprint": "0.x"
 	},
 	"devDependencies": {
-		"ava": "^6.4.1",
+		"ava": "^7.0.0",
 		"dprint": "latest",
-		"execa": "^9.6.0"
+		"execa": "^9.6.1"
 	}
 }

@@ -11,6 +11,7 @@
 	"lineWidth": 120,
 	"useTabs": true,
 	"json": {
+		"trailingCommas": "jsonc",
 		"jsonTrailingCommaFiles": [
 			"tsconfig.json",
 			"tsconfig.build.json",
@@ -19,7 +20,8 @@
 			".vscode/extensions.json",
 			".vscode/tasks.json",
 			".vscode/launch.json"
-		]
+		],
+		"packageJson.applyConventions": false
 	},
 	"malva": {
 		"hexCase": "upper",

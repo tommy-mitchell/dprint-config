@@ -1,6 +1,6 @@
 # dprint-config
 
-Personal config for [`dprint`](https://github.com/dprint/dprint).
+Personal config for [`dprint`](https://github.com/dprint/dprint). Intended for use with [`@tommy-mitchell/eslint-config-xo`](https://github.com/tommy-mitchell/eslint-config-xo).
 
 ## Install
 
@@ -16,15 +16,17 @@ npm install --save-dev @tommy-mitchell/dprint-config dprint
 yarn add --dev @tommy-mitchell/dprint-config dprint
 ```
 
+```sh
+pnpm add --save-dev @tommy-mitchell/dprint-config dprint
+```
+
 </p>
 </details>
 
 After installing, add your desired `dprint` plugins:
 
 ```sh
-dprint config add json
-dprint config add markdown
-dprint config add typescript
+dprint config add json markdown typescript
 ```
 
 ### Peer Dependencies
@@ -36,7 +38,7 @@ dprint config add typescript
 Add to the `extends` section of your `dprint` config:
 
 ```jsonc
-"extends": ["node_modules/@tommy-mitchell/dprint-config/index.json"],
+"extends": "node_modules/@tommy-mitchell/dprint-config/index.json",
 ```
 
 ### VS Code
@@ -44,11 +46,13 @@ Add to the `extends` section of your `dprint` config:
 Add the following to your `settings.json`:
 
 ```jsonc
-"[javascript][typescript][markdown][json][jsonc]": {
+"[javascript][typescript][markdown][json][jsonc][yaml]": {
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "dprint.dprint",
 },
 ```
+
+Update as needed based on used plugins.
 
 ## Related
 

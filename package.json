@@ -7,12 +7,9 @@
 		"config",
 		"dprint"
 	],
-	"license": "MIT",
 	"repository": "tommy-mitchell/dprint-config",
-	"author": {
-		"name": "Tommy Mitchell",
-		"url": "https://tommymitchell.io"
-	},
+	"license": "MIT",
+	"author": "Tommy Mitchell (https://tommymitchell.io)",
 	"type": "module",
 	"files": [
 		"index.json"
@@ -21,12 +18,12 @@
 		"format": "dprint fmt",
 		"test": "ava"
 	},
-	"peerDependencies": {
-		"dprint": "0.x"
-	},
 	"devDependencies": {
 		"ava": "^8.0.1",
 		"dprint": "latest",
 		"execa": "^10.0.1"
+	},
+	"peerDependencies": {
+		"dprint": "0.x"
 	}
 }

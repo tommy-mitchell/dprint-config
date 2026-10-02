@@ -1,18 +1,17 @@
 {
-	"includes": [
-		"index.json",
-		"dprint.json",
-		"package.json",
-		".github/workflows/*.yml",
-		"test/test.js"
-	],
-	"extends": ["./index.json"],
+	"$schema": "https://dprint.dev/schemas/v0.json",
+	"includes": ["/*.json", ".github/workflows/*.yml", "test/test.js"],
+	"extends": "./index.json",
 	"plugins": [
-		"npm:@dprint/json@0.25.0",
+		"npm:@dprint/json@0.25.1",
 		"npm:@dprint/typescript@0.96.1",
 		"npm:@dprint/markdown@0.24.0",
 		"npm:dprint-plugin-malva@0.16.0",
 		"npm:dprint-plugin-yaml@0.6.0",
-		"npm:dprint-plugin-markup@0.27.5"
-	]
+		"npm:dprint-plugin-markup@0.27.5",
+	],
+	"json": {
+		"packageJson.applyConventions": true,
+		"jsonTrailingCommaFiles": ["dprint.json", "index.json"],
+	},
 }

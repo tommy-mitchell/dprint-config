@@ -5,7 +5,7 @@ An h1 header
 
 Paragraphs are separated by a blank line.
 
-2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
+2nd paragraph. *Italic*, _italic_, **bold**, __bold__, and `monospace`. Itemized lists
 look like:
 
   * this one
@@ -157,3 +157,8 @@ $$I = \int \rho R^{2} dV$$
 
 And note that you can backslash-escape any punctuation characters
 which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
+#### h4 header
+lorem ipsum dolor sit amet.
+```js
+const x =    1
+```

@@ -12,12 +12,13 @@
 	"useTabs": true,
 	"json": {
 		"trailingCommas": "jsonc",
-		"jsonTrailingCommaFiles": [
-			"dprint.json",
-			"{js,ts}config.*.json",
-			".vscode/*.json",
-		],
+		"jsonTrailingCommaFiles": ["dprint.json", "{js,ts}config.*.json", ".vscode/*.json"],
 		"packageJson.applyConventions": false,
+		"array.preferSingleLine": true,
+		"overrides": [{
+			"files": ["package.json"],
+			"array.preferSingleLine": false,
+		}],
 	},
 	"malva": {
 		"hexCase": "upper",
@@ -33,6 +34,13 @@
 		"preferAttrsSingleLine": true,
 		"html.void.selfClosing": true,
 		"ignoreCommentDirective": "dprint-ignore",
+	},
+	"markdown": {
+		"emphasisKind": "asterisks",
+		"overrides": [{
+			"files": "readme.md",
+			"codeBlock.skipFormat": true,
+		}],
 	},
 	"typescript": {
 		"semiColons": "always",

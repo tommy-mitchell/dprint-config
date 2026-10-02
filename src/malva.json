@@ -1,0 +1,10 @@
+{
+	"$schema": "https://dprint.dev/schemas/v0.json",
+	"malva": {
+		"hexCase": "upper",
+		"trailingComma": true,
+		"formatComments": true,
+		"declarationOrder": "smacss",
+		"ignoreCommentDirective": "dprint-ignore",
+	},
+}

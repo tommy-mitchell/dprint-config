@@ -12,9 +12,13 @@
 	"author": "Tommy Mitchell (https://tommymitchell.io)",
 	"type": "module",
 	"files": [
-		"index.json"
+		"index.json",
+		"malva.json",
+		"markup.json"
 	],
 	"scripts": {
+		"prepublishOnly": "npm run build",
+		"build": "node -e 'fs.promises.cp(`src`, `.`, {recursive: true})'",
 		"format": "dprint fmt",
 		"test": "ava"
 	},

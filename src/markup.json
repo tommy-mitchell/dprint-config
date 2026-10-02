@@ -1,0 +1,11 @@
+{
+	"$schema": "https://dprint.dev/schemas/v0.json",
+	"markup": {
+		"formatComments": true,
+		"scriptIndent": true,
+		"styleIndent": true,
+		"preferAttrsSingleLine": true,
+		"html.void.selfClosing": true,
+		"ignoreCommentDirective": "dprint-ignore",
+	},
+}

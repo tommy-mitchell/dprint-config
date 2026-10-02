@@ -9,7 +9,7 @@ npm install --save-dev @tommy-mitchell/dprint-config dprint
 ```
 
 <details>
-<summary>Other Package Managers</summary>
+<summary>Other package managers</summary>
 <p>
 
 ```sh
@@ -26,7 +26,7 @@ pnpm add --save-dev @tommy-mitchell/dprint-config dprint
 After installing, add your desired `dprint` plugins:
 
 ```sh
-dprint config add json markdown typescript
+dprint config add json markdown typescript npm:dprint-plugin-yaml
 ```
 
 ### Peer Dependencies
@@ -38,7 +38,7 @@ dprint config add json markdown typescript
 Add to the `extends` section of your `dprint` config:
 
 ```jsonc
-"extends": "node_modules/@tommy-mitchell/dprint-config/index.json",
+"extends": ["node_modules/@tommy-mitchell/dprint-config/index.json"],
 ```
 
 ### VS Code
@@ -52,7 +52,98 @@ Add the following to your `settings.json`:
 },
 ```
 
-Update as needed based on used plugins.
+> [!TIP]
+> You can configure VSCode to read `dprint.json` as JSONC and ignore trailing comma warnings:
+>
+> <details>
+> <summary><code>.jsonc</code> file association</summary>
+> <p>
+>
+> ```jsonc
+> // settings.json
+> "files.associations": { "dprint.json": "jsonc" },
+> "json.schemas": [{
+>   "fileMatch": ["dprint.json"],
+>   "schema": { "allowTrailingCommas": true }
+> }]
+> ```
+>
+> </p>
+> </details>
+
+### Plugins
+
+3rd-party plugins must be individually extended from separate configs to avoid errors ([dprint#891](https://github.com/dprint/dprint/issues/891)).
+
+#### Malva (CSS)
+
+See [`dprint-plugin-malva`](https://github.com/g-plane/malva).
+
+```sh
+dprint config add npm:dprint-plugin-malva
+```
+
+<details>
+<summary><code>dprint.json</code></summary>
+<p>
+
+```jsonc
+"extends": [
+	// …
+	"node_modules/@tommy-mitchell/dprint-config/malva.json",
+],
+```
+
+</p>
+</details>
+
+<details>
+<summary><code>settings.json</code></summary>
+<p>
+
+```jsonc
+"[…][css][scss][tailwindcss]": {
+  // …
+},
+```
+
+</p>
+</details>
+
+#### Markup (HTML)
+
+See [`dprint-plugin-markup`](https://github.com/g-plane/markup_fmt).
+
+```sh
+dprint config add npm:dprint-plugin-markup
+```
+
+<details>
+<summary><code>dprint.json</code></summary>
+<p>
+
+```jsonc
+"extends": [
+	// …
+	"node_modules/@tommy-mitchell/dprint-config/markup.json",
+],
+```
+
+</p>
+</details>
+
+<details>
+<summary><code>settings.json</code></summary>
+<p>
+
+```jsonc
+"[…][html]": {
+  // …
+},
+```
+
+</p>
+</details>
 
 ## Related
 

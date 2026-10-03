@@ -1,19 +1,19 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import test from "ava";
-import { $ } from "execa";
+import { x } from "tinyexec";
 
-const fixtureFiles = await fs.readdir(new URL("fixtures", import.meta.url));
-const fixtures = fixtureFiles.filter(file => file.startsWith("fixture."));
+const format = async ({ name, stdin }) => await x("dprint", ["fmt", "--stdin", name], { stdin, throwOnError: true });
+
+const fixturesDirectory = path.join(import.meta.dirname, "fixtures");
+const fixtures = await Array.fromAsync(fs.glob("*/*", { cwd: fixturesDirectory }));
 
 for (const fixture of fixtures) {
-	const extension = path.extname(fixture);
+	test(`formats ${fixture}`, async t => {
+		const stdin = await fs.readFile(path.join(fixturesDirectory, fixture), "utf8");
+		const { stdout, exitCode } = await format({ name: path.basename(fixture), stdin });
 
-	test(`formats ${extension}`, async t => {
-		const inputFile = new URL(`fixtures/${fixture}`, import.meta.url);
-		const { stdout, exitCode } = await $({ inputFile })`dprint fmt --stdin ${fixture}`;
-
-		t.snapshot(stdout);
+		t.snapshot(stdout.trim(), "Formatted output");
 		t.is(exitCode, 0, "dprint failed!");
 	});
 }

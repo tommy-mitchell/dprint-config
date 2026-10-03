@@ -12,7 +12,7 @@
 	"useTabs": true,
 	"json": {
 		"trailingCommas": "jsonc",
-		"jsonTrailingCommaFiles": ["dprint.json", "{js,ts}config.*.json", ".vscode/*.json"],
+		"jsonTrailingCommaFiles": ["dprint.json", "{js,ts}config{.*,}.json", ".vscode/*.json"],
 		"packageJson.applyConventions": false,
 		"array.preferSingleLine": true,
 		"overrides": [{

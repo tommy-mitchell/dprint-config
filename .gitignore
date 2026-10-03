@@ -3,6 +3,5 @@ package-lock.json
 yarn.lock
 pnpm-*.yaml
 
-/*.json
-!dprint.json
-!package.json
+# dist
+/*.jsonc

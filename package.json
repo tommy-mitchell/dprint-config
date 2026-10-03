@@ -12,9 +12,9 @@
 	"author": "Tommy Mitchell (https://tommymitchell.io)",
 	"type": "module",
 	"files": [
-		"index.json",
-		"malva.json",
-		"markup.json"
+		"index.jsonc",
+		"malva.jsonc",
+		"markup.jsonc"
 	],
 	"scripts": {
 		"prepublishOnly": "npm run build",

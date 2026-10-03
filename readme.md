@@ -38,7 +38,7 @@ dprint config add json markdown typescript npm:dprint-plugin-yaml
 Add to the `extends` section of your `dprint` config:
 
 ```jsonc
-"extends": ["node_modules/@tommy-mitchell/dprint-config/index.json"],
+"extends": ["node_modules/@tommy-mitchell/dprint-config/index.jsonc"],
 ```
 
 ### VS Code
@@ -90,7 +90,7 @@ dprint config add npm:dprint-plugin-malva
 ```jsonc
 "extends": [
 	// …
-	"node_modules/@tommy-mitchell/dprint-config/malva.json",
+	"node_modules/@tommy-mitchell/dprint-config/malva.jsonc",
 ],
 ```
 
@@ -125,7 +125,7 @@ dprint config add npm:dprint-plugin-markup
 ```jsonc
 "extends": [
 	// …
-	"node_modules/@tommy-mitchell/dprint-config/markup.json",
+	"node_modules/@tommy-mitchell/dprint-config/markup.jsonc",
 ],
 ```
 

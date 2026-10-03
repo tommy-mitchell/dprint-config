@@ -19,6 +19,7 @@
 	"scripts": {
 		"prepublishOnly": "npm run build",
 		"build": "node -e 'fs.promises.cp(`src`, `.`, {recursive: true})'",
+		"lint": "dprint check",
 		"format": "dprint fmt",
 		"test": "ava"
 	},

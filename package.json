@@ -1,13 +1,19 @@
 {
 	"name": "@tommy-mitchell/dprint-config",
-	"version": "0.9.0",
+	"version": "0.10.0",
 	"description": "Personal config for dprint.",
-	"keywords": ["nodejs", "config", "dprint"],
+	"keywords": [
+		"nodejs",
+		"config",
+		"dprint"
+	],
 	"repository": "tommy-mitchell/dprint-config",
 	"license": "MIT",
 	"author": "Tommy Mitchell (https://tommymitchell.io)",
 	"type": "module",
-	"files": ["index.jsonc"],
+	"files": [
+		"index.jsonc"
+	],
 	"scripts": {
 		"lint": "dprint check",
 		"format": "dprint fmt",

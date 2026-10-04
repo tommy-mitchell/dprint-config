@@ -1,16 +1,7 @@
 {
 	"$schema": "https://dprint.dev/schemas/v0.json",
-	"includes": ["*.json", ".github/workflows/*.yml", "test/test.js", "readme.md"],
-	"excludes": ["test/fixtures"],
-	"extends": ["src/index.jsonc", "src/malva.jsonc", "src/markup.jsonc"],
-	"plugins": [
-		"npm:@dprint/json@0.25.1",
-		"npm:@dprint/typescript@0.96.1",
-		"npm:@dprint/markdown@0.25.0",
-		"npm:dprint-plugin-malva@0.16.0",
-		"npm:dprint-plugin-yaml@0.6.0",
-		"npm:dprint-plugin-markup@0.27.5",
-	],
+	"extends": "index.jsonc",
+	"excludes": ["test/*/**"],
 	"json": {
 		"packageJson.applyConventions": true,
 	},

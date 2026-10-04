@@ -1,0 +1,13 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "dprint configuration with plugin schemas",
+	"allOf": [{ "$ref": "https://dprint.dev/schemas/v0.json" }],
+	"properties": {
+		"json": { "$ref": "https://plugins.dprint.dev/dprint/json/latest/schema.json" },
+		"typescript": { "$ref": "https://plugins.dprint.dev/dprint/typescript/latest/schema.json" },
+		"malva": { "$ref": "https://plugins.dprint.dev/g-plane/malva/latest/schema.json" },
+		"markdown": { "$ref": "https://plugins.dprint.dev/dprint/markdown/latest/schema.json" },
+		"markup": { "$ref": "https://plugins.dprint.dev/g-plane/markup_fmt/latest/schema.json" },
+		"yaml": { "$ref": "https://plugins.dprint.dev/g-plane/pretty_yaml/latest/schema.json" }
+	}
+}
